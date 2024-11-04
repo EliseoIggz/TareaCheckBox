@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/cBNaranja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naranja"
+        app:layout_constraintStart_toStartOf="@+id/cBFresa"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/cBManzana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="Manzana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBFresa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="Escoge las frutas:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cBFresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fresa"
+        app:layout_constraintStart_toStartOf="@+id/cBManzana"
+        app:layout_constraintTop_toBottomOf="@+id/cBNaranja" />
+
+    <Button
+        android:id="@+id/botonComer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="COMER"
+        app:layout_constraintEnd_toEndOf="@+id/cBManzana"
+        app:layout_constraintStart_toStartOf="@+id/cBManzana"
+        app:layout_constraintTop_toBottomOf="@+id/cBManzana" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
